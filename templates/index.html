@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
+{% load staticfiles thumbnail %}
 
 {% block content %}
     <section class="sl_container">
@@ -17,12 +17,12 @@
                 </div>
 
                 <div class="sl_slide">
-                  <img src="{% static 'img/slider-img.jpg' %}" alt="image">
+                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
                     <div class="sl_hover"></div>
                 </div>
 
                 <div class="sl_slide">
-                     <img src="{% static 'img/slider-img.jpg' %}" alt="image">
+                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
                     <div class="sl_hover"></div>
                 </div>
 
@@ -42,93 +42,28 @@
             </div>
 
             <div class="news_slider">
-                <div class="sl_slide">
-                    <div class="news">
-                        <div class="n_img">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </div>
+                {% for item in news %}
+                    <div class="sl_slide">
+                        <div class="news">
+                            <div class="n_img">
+                                {% thumbnail item.image "380x180" as im %}
+                                    <img src="{{ im.url }}" alt="image">
+                                {% endthumbnail %}
+                            </div>
 
-                        <div class="n_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
+                            <div class="n_desc">
+                                <h5>{{ item.title }}</h5>
 
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası
-                                İlişkiler, İktisat, Sosyoloji ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve
-                                bu alanlar erçevesinde faaliyet yürütmektedir. Araştırmacılara yardımcı Orta </p>
-                        </div>
+                                <p>{{ item.description }} </p>
+                            </div>
 
-                        <div class="n_date">
-                            <a href="#">Read more</a>
-                            <span>30.04.17</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sl_slide">
-                    <div class="news">
-                        <div class="n_img">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </div>
-
-                        <div class="n_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
-
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası
-                                İlişkiler, İktisat, Sosyoloji ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve
-                                bu alanlar erçevesinde faaliyet yürütmektedir. Araştırmacılara yardımcı Orta </p>
-                        </div>
-
-                        <div class="n_date">
-                            <a href="#">Read more</a>
-                            <span>30.04.17</span>
+                            <div class="n_date">
+                                <a href="{{ item.get_absolute_url }}">Read more</a>
+                                <span>{{ item.timestamp|date:'d-M-Y, h:m' }}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="sl_slide">
-                    <div class="news">
-                        <div class="n_img">
-                           <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </div>
-
-                        <div class="n_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
-
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası
-                                İlişkiler, İktisat, Sosyoloji ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve
-                                bu alanlar erçevesinde faaliyet yürütmektedir. Araştırmacılara yardımcı Orta </p>
-                        </div>
-
-                        <div class="n_date">
-                            <a href="#">Read more</a>
-                            <span>30.04.17</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sl_slide">
-                    <div class="news">
-                        <div class="n_img">
-                           <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </div>
-
-                        <div class="n_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
-
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası
-                                İlişkiler, İktisat, Sosyoloji ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve
-                                bu alanlar erçevesinde faaliyet yürütmektedir. Araştırmacılara yardımcı Orta </p>
-                        </div>
-
-                        <div class="n_date">
-                            <a href="#">Read more</a>
-                            <span>30.04.17</span>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -393,7 +328,7 @@
                 <div class="gallery_slider" uk-lightbox="animation: scale">
                     <div class="sl_slide">
                         <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 1">
-                         <img src="{% static 'img/news_img.jpg' %}" alt="image">
+                            <img src="{% static 'img/news_img.jpg' %}" alt="image">
                         </a>
                     </div>
                     <div class="sl_slide">
@@ -409,7 +344,7 @@
 
                     <div class="sl_slide">
                         <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 4">
-                          <img src="{% static 'img/news_img.jpg' %}" alt="">
+                            <img src="{% static 'img/news_img.jpg' %}" alt="">
                         </a>
                     </div>
 
