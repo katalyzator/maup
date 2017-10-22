@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0570e799-8815-49a7-b9e5-566260358421" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/footer-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/maub.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/news_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/polygon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/slider-img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/tabs-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/university-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/assets/static_files/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maub/urls.py" afterPath="$PROJECT_DIR$/maub/urls.py" />
-    </list>
+    <list default="true" id="0570e799-8815-49a7-b9e5-566260358421" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
