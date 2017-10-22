@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0570e799-8815-49a7-b9e5-566260358421" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/migrations/0002_auto_20171022_1935.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.eot" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.ttf" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.woff" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-bold-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.eot" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.ttf" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.woff" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-medium-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.eot" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.ttf" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.woff" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-regular-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.eot" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.ttf" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.woff" afterPath="$PROJECT_DIR$/templates/assets/static_files/fonts/firasans-semibold-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-left.png" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-left.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-right.png" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/arrow-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/footer-bg.jpg" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/footer-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/logo.png" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/maub.jpg" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/maub.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/news_img.jpg" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/news_img.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/polygon.png" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/polygon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/slider-img.jpg" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/slider-img.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/tabs-bg.jpg" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/tabs-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/img/university-logo.png" afterPath="$PROJECT_DIR$/templates/assets/static_files/img/university-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/maub.iml" afterPath="$PROJECT_DIR$/.idea/maub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/__init__.py" afterPath="$PROJECT_DIR$/main/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/admin.py" afterPath="$PROJECT_DIR$/main/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/apps.py" afterPath="$PROJECT_DIR$/main/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/migrations/__init__.py" afterPath="$PROJECT_DIR$/main/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/tests.py" afterPath="$PROJECT_DIR$/main/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maub/__init__.py" afterPath="$PROJECT_DIR$/maub/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maub/settings.py" afterPath="$PROJECT_DIR$/maub/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maub/urls.py" afterPath="$PROJECT_DIR$/maub/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maub/wsgi.py" afterPath="$PROJECT_DIR$/maub/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/css/main.css" afterPath="$PROJECT_DIR$/templates/assets/static_files/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/assets/static_files/js/main.js" afterPath="$PROJECT_DIR$/templates/assets/static_files/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-    </list>
+    <list default="true" id="0570e799-8815-49a7-b9e5-566260358421" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,8 +62,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            <state relative-caret-position="885">
+              <caret line="350" column="39" lean-forward="false" selection-start-line="350" selection-start-column="39" selection-end-line="350" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -785,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state relative-caret-position="885">
+          <caret line="350" column="39" lean-forward="false" selection-start-line="350" selection-start-column="39" selection-end-line="350" selection-end-column="39" />
           <folding />
         </state>
       </provider>
