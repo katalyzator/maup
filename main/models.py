@@ -47,6 +47,8 @@ class University(models.Model):
     name = models.CharField(max_length=1000, verbose_name='Название Университета')
     image = models.ImageField(upload_to='images/universities', verbose_name='Картинка')
     link = models.URLField(blank=True, null=True)
+    active = models.BooleanField(default=False, verbose_name='Поставьте галочку если это '
+                                                             'один из главных Университетов')
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
