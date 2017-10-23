@@ -120,106 +120,17 @@
             </div>
 
             <div class="universities_slider">
-                <div class="sl_slide">
-                    <a href="#">
+                {% for item in universities %}
+                    <div class="sl_slide">
+                        <a href="{{ item.link }}" target="_blank">
 					<span class="u_img">
-						<img src="{% static 'img/university-logo.png' %}" alt="image">
+						<img src="{{ item.image.url }}" alt="image">
 					</span>
+                            <p>{{ item.name }}</p>
+                        </a>
+                    </div>
+                {% endfor %}
 
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/tabs-bg.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf
-                            asdhfhads fasdjfha sdfgasdhf adsgf asfasdhfgads f</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/slider-img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a href="#">
-					<span class="u_img">
-						<img src="{% static 'img/news_img.jpg' %}" alt="image">
-					</span>
-
-                        <p>Eastern University named after Mahmud Kashgari-Barskani asdasdfdas sadfasdf asdfasdf</p>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
