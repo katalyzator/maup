@@ -23,3 +23,33 @@ class News(models.Model):
     def get_absolute_url(self):
         return "/news/%i/" % self.id
 
+
+class Slider(models.Model):
+    class Meta:
+        verbose_name_plural = 'Постеры'
+        verbose_name = 'Постер'
+
+    title = models.TextField(verbose_name='Описание постера')
+    image = models.ImageField(upload_to='images/slider', verbose_name='Картинка Постера')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+
+class University(models.Model):
+    class Meta:
+        verbose_name_plural = 'Университеты'
+        verbose_name = 'университет'
+
+    name = models.CharField(max_length=1000, verbose_name='Название Университета')
+    image = models.ImageField(upload_to='images/universities', verbose_name='Картинка')
+    link = models.URLField(blank=True, null=True)
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.name)

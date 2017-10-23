@@ -6,32 +6,15 @@
     <section class="sl_container">
         <div class="sl_block">
             <div class="main_slider">
-                <div class="sl_slide">
-                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
-                    <div class="sl_hover"></div>
-                </div>
-
-                <div class="sl_slide">
-                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
-                    <div class="sl_hover"></div>
-                </div>
-
-                <div class="sl_slide">
-                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
-                    <div class="sl_hover"></div>
-                </div>
-
-                <div class="sl_slide">
-                    <img src="{% static 'img/slider-img.jpg' %}" alt="image">
-                    <div class="sl_hover"></div>
-                </div>
-
-
+                {% for item in slider %}
+                    <div class="sl_slide">
+                        <img src="{{ item.image.url }}" alt="image">
+                        <h1>{{ item.title }}</h1>
+                        <div class="sl_hover"></div>
+                    </div>
+                {% endfor %}
             </div>
-
-            <h1>MERKEZİ ASYA ÜNİVERSİTELER BİRLİĞİ</h1>
         </div>
-
     </section>
 
     <section class="news_container">
