@@ -58,13 +58,22 @@ class University(models.Model):
 
 
 class Conference(models.Model):
+    EXTRA_CHOICES = (
+        ('conference', 'Konferens'),
+        ('kongre', 'Kongre'),
+    )
+
     class Meta:
         verbose_name_plural = 'Концеренции'
         verbose_name = 'объект'
 
+    mode = models.CharField(max_length=20, choices=EXTRA_CHOICES, verbose_name='Выберите тип')
     title = models.CharField(max_length=255, verbose_name='Название')
     description = models.TextField(verbose_name='Описание')
     date_start = models.DateField(verbose_name='Дата проведения')
+
+    active = models.BooleanField(default=False, verbose_name='Поставьте галочку чтобы'
+                                                             ' отобразить на главной странице')
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
@@ -74,4 +83,3 @@ class Conference(models.Model):
 
     def get_absolute_url(self):
         return "/conferences/%i/" % self.id
-

@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.views.generic import TemplateView
 
-from main.models import News, Slider, University
+from main.models import News, Slider, University, Conference
 
 
 class IndexView(TemplateView):
@@ -12,6 +12,7 @@ class IndexView(TemplateView):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['news'] = News.objects.all().order_by('updated')
         context['slider'] = Slider.objects.all().order_by('updated')
-        context['universities'] = University.objects.filter()
+        context['universities'] = University.objects.filter(active=True)
+        context['conferences'] = Conference.objects.filter(active=True)
 
         return context

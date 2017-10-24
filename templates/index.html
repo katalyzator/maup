@@ -141,35 +141,21 @@
             <div class="events_block">
                 <h4>konferanslar</h4>
                 <div class="events">
-                    <div class="event">
-                        <div class="date">
-                            <span>01</span>
-                            <p>Haziran</p>
+                    {% for konferens in conferences %}
+                        <div class="event">
+                            <div class="date">
+                                <span>{{ konferens.date_start|date:'d' }}</span>
+                                <p>{{ konferens.date_start|date:'m' }}</p>
+                            </div>
+
+                            <div class="e_desc">
+                                <h5>{{ konferens.title }}</h5>
+                                <p>{{ konferens.description }}</p>
+
+                                <a href="{{ konferens.get_absolute_url }}">Read more</a>
+                            </div>
                         </div>
-
-                        <div class="e_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve bu alanlar erçevesinde</p>
-
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="event">
-                        <div class="date">
-                            <span>01</span>
-                            <p>Haziran</p>
-                        </div>
-
-                        <div class="e_desc">
-                            <h5>Türk Üniversiteler Birliği Öğrenci Konseyi KTMÜ'de Toplandı</h5>
-                            <p>Orta Asya Araştırma Merkezi Siyaset Bilimi ve Uluslararası İlişkiler, İktisat, Sosyoloji
-                                ve Eğitim olmak üzere dört uzmanlık grubundan oluşmakta ve bu alanlar erçevesinde</p>
-
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="events_block">
