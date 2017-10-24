@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0570e799-8815-49a7-b9e5-566260358421" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/migrations/0007_conference_active.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +40,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            <state relative-caret-position="79">
+              <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="16" />
               <folding>
                 <element signature="e#15#74#0" expanded="true" />
               </folding>
@@ -68,8 +64,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="143" column="54" lean-forward="true" selection-start-line="143" selection-start-column="54" selection-end-line="143" selection-end-column="54" />
+            <state relative-caret-position="265">
+              <caret line="164" column="36" lean-forward="true" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -829,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        <state relative-caret-position="79">
+          <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="16" />
           <folding>
             <element signature="e#15#74#0" expanded="true" />
           </folding>
@@ -839,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="143" column="54" lean-forward="true" selection-start-line="143" selection-start-column="54" selection-end-line="143" selection-end-column="54" />
+        <state relative-caret-position="265">
+          <caret line="164" column="36" lean-forward="true" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
           <folding />
         </state>
       </provider>
