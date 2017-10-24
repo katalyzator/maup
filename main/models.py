@@ -55,3 +55,23 @@ class University(models.Model):
 
     def __unicode__(self):
         return smart_unicode(self.name)
+
+
+class Conference(models.Model):
+    class Meta:
+        verbose_name_plural = 'Концеренции'
+        verbose_name = 'объект'
+
+    title = models.CharField(max_length=255, verbose_name='Название')
+    description = models.TextField(verbose_name='Описание')
+    date_start = models.DateField(verbose_name='Дата проведения')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+    def get_absolute_url(self):
+        return "/conferences/%i/" % self.id
+
