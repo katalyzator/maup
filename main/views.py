@@ -16,3 +16,7 @@ class IndexView(TemplateView):
         context['conferences'] = Conference.objects.filter(active=True)
 
         return context
+
+
+class ConferenceView(TemplateView):
+    template_name = 'all_conferences.html'
