@@ -8,7 +8,9 @@
             <div class="main_slider">
                 {% for item in slider %}
                     <div class="sl_slide">
-                        <img src="{{ item.image.url }}" alt="image">
+                        {% thumbnail item.image "1354x655" as im %}
+                            <img src="{{ im.url }}" alt="image">
+                        {% endthumbnail %}
                         <h1>{{ item.title }}</h1>
                         <div class="sl_hover"></div>
                     </div>
