@@ -146,44 +146,40 @@
             <div class="events_block">
                 <h4>konferanslar</h4>
                 <div class="events">
-                    {% for konferens in conferences %}
-                        {% if konferens.mode == 'conference' %}
-                            <div class="event">
-                                <div class="date">
-                                    <span>{{ konferens.date_start|date:'d' }}</span>
-                                    <p>{{ konferens.date_start|date:'F' }}</p>
-                                </div>
-
-                                <div class="e_desc">
-                                    <h5>{{ konferens.title }}</h5>
-                                    <p>{{ konferens.description }}</p>
-
-                                    <a href="{{ konferens.get_absolute_url }}">Read more</a>
-                                </div>
+                    {% for konferens in konferans %}
+                        <div class="event">
+                            <div class="date">
+                                <span>{{ konferens.date_start|date:'d' }}</span>
+                                <p>{{ konferens.date_start|date:'F' }}</p>
                             </div>
-                        {% endif %}
+
+                            <div class="e_desc">
+                                <h5>{{ konferens.title }}</h5>
+                                <p>{{ konferens.description }}</p>
+
+                                <a href="{{ konferens.get_absolute_url }}">Read more</a>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
             <div class="events_block">
                 <h4>Kongreler</h4>
                 <div class="events">
-                    {% for konferens in conferences %}
-                        {% if konferens.mode == 'kongre' %}
-                            <div class="event">
-                                <div class="date">
-                                    <span>{{ konferens.date_start|date:'d' }}</span>
-                                    <p>{{ konferens.date_start|date:'F' }}</p>
-                                </div>
-
-                                <div class="e_desc">
-                                    <h5>{{ konferens.title }}</h5>
-                                    <p>{{ konferens.description }}</p>
-
-                                    <a href="{{ konferens.get_absolute_url }}">Read more</a>
-                                </div>
+                    {% for konferens in congre %}
+                        <div class="event">
+                            <div class="date">
+                                <span>{{ konferens.date_start|date:'d' }}</span>
+                                <p>{{ konferens.date_start|date:'F' }}</p>
                             </div>
-                        {% endif %}
+
+                            <div class="e_desc">
+                                <h5>{{ konferens.title }}</h5>
+                                <p>{{ konferens.description }}</p>
+
+                                <a href="{{ konferens.get_absolute_url }}">Read more</a>
+                            </div>
+                        </div>
                     {% endfor %}
 
                 </div>
@@ -198,36 +194,19 @@
             </div>
         </div>
 
+
         <div class="gallery">
             <div class="uk-container">
                 <div class="gallery_slider" uk-lightbox="animation: scale">
-                    <div class="sl_slide">
-                        <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 1">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </a>
-                    </div>
-                    <div class="sl_slide">
-                        <a class="uk-inline" href="//www.youtube.com/watch?v=4bzIpYiPUUo" caption="Caption 2">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="">
-                        </a>
-                    </div>
-                    <div class="sl_slide">
-                        <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 3">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="sl_slide">
-                        <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 4">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="">
-                        </a>
-                    </div>
-
-                    <div class="sl_slide">
-                        <a class="uk-inline" href="{% static 'img/tabs-bg.jpg' %}" caption="Caption 5">
-                            <img src="{% static 'img/news_img.jpg' %}" alt="">
-                        </a>
-                    </div>
+                    {% for item in gallery %}
+                        <div class="sl_slide">
+                            {% thumbnail item.image "380x320" as im %}
+                                <a class="uk-inline" href="{{ item.image.url }}" caption="{{ item.title }}">
+                                    <img src="{{ im.url }}" alt="">
+                                </a>
+                            {% endthumbnail %}
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

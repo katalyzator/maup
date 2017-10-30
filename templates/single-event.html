@@ -22,7 +22,7 @@
                     {% for item in event.event_image.all %}
                         <div class="sl_slide">
                             {% thumbnail item.image "380x320" as im %}
-                                <a class="uk-inline" href="{{ item.image.url }}" caption="Caption 1">
+                                <a class="uk-inline" href="{{ item.image.url }}" caption="{{ item.title }}">
                                     <img src="{{ im.url }}" alt="">
                                 </a>
                             {% endthumbnail %}

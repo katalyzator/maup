@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 
 from django.views.generic import TemplateView, ListView, DetailView
 
-from main.models import News, Slider, University, Conference
+from main.models import News, Slider, University, Conference, Gallery
 
 
 class IndexView(TemplateView):
@@ -13,7 +13,9 @@ class IndexView(TemplateView):
         context['news'] = News.objects.all().order_by('updated')
         context['slider'] = Slider.objects.all().order_by('updated')
         context['universities'] = University.objects.filter(active=True)
-        context['conferences'] = Conference.objects.filter(active=True)
+        context['congre'] = Conference.objects.filter(active=True, mode='kongre')[:2]
+        context['konferans'] = Conference.objects.filter(active=True, mode='conference')[:2]
+        context['gallery'] = Gallery.objects.all()
 
         return context
 

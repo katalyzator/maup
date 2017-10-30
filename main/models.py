@@ -73,7 +73,7 @@ class Conference(models.Model):
     date_start = models.DateField(verbose_name='Дата проведения')
 
     active = models.BooleanField(default=False, verbose_name='Поставьте галочку чтобы'
-                                                             ' отобразить на главной странице')
+                                                             ' отобразить мероприятия')
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
@@ -109,6 +109,21 @@ class EventImage(models.Model):
     event = models.ForeignKey(Conference, related_name='event_image', verbose_name='choose Event')
     title = models.CharField(max_length=255, verbose_name='Title of image', blank=True, null=True)
     image = models.ImageField(upload_to='images/event', verbose_name='Image any size')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+
+class Gallery(models.Model):
+    class Meta:
+        verbose_name_plural = 'Галерея'
+        verbose_name = 'Картинку'
+
+    title = models.CharField(max_length=255, verbose_name='Title of image', blank=True, null=True)
+    image = models.ImageField(upload_to='images/gallery', verbose_name='Image any size')
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)

@@ -23,7 +23,7 @@
                     {% for item in news.news_image.all %}
                         <div class="sl_slide">
                             {% thumbnail item.image "380x320" as im %}
-                                <a class="uk-inline" href="{{ item.image.url }}" caption="Caption {{ item.id }}">
+                                <a class="uk-inline" href="{{ item.image.url }}" caption="{{ item.title }}">
                                     <img src="{{ item.image.url }}" alt="">
                                 </a>
                             {% endthumbnail %}

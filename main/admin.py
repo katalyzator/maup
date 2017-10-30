@@ -1,6 +1,9 @@
+# coding=utf-8
 from django.contrib import admin
 
-from main.models import News, Slider, University, Conference, NewsImage, EventImage
+from main.models import News, Slider, University, Conference, NewsImage, EventImage, Gallery
+
+admin.site.site_header = 'Панель управления сайтом MAUB.ORG'
 
 
 class NewsAdmin(admin.ModelAdmin):
@@ -45,6 +48,14 @@ class EventImageAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 
+class GalleryImageAdmin(admin.ModelAdmin):
+    class Meta:
+        model = Gallery
+
+    list_display = ['title']
+
+
+admin.site.register(Gallery, GalleryImageAdmin)
 admin.site.register(NewsImage, NewsImageAdmin)
 admin.site.register(EventImage, EventImageAdmin)
 admin.site.register(Conference, ConferenceAdmin)
