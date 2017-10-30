@@ -13,7 +13,7 @@ class News(models.Model):
     description = models.TextField(verbose_name='Описание')
     image = models.ImageField(upload_to='news/images', verbose_name='Картинка обложки')
     content = RichTextUploadingField(verbose_name='контент новости')
-
+    
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
