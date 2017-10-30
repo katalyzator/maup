@@ -10,8 +10,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^$', IndexView.as_view(), name='index'),
-    url(r'^conferences/', ConferenceView.as_view(), name='conference'),
-    url(r'^news/', NewsView.as_view(), name='all_news'),
+    url(r'^conferences/$', ConferenceView.as_view(), name='conference'),
+    url(r'^news/$', NewsView.as_view(), name='all_news'),
+    url(r'^news/(?P<id>\d+)/$', SingleNews.as_view(), name='single_news'),
+    url(r'^conferences/(?P<id>\d+)/$', SingleEvent.as_view(), name='single_event'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

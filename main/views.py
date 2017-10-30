@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView, ListView, DetailView
 
 from main.models import News, Slider, University, Conference
 
@@ -26,3 +26,25 @@ class ConferenceView(ListView):
 class NewsView(ListView):
     model = News
     template_name = 'news.html'
+
+
+class SingleNews(TemplateView):
+    model = News
+    template_name = 'single-news.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(SingleNews, self).get_context_data(**kwargs)
+        context['news'] = get_object_or_404(self.model, id=self.kwargs.get('id'))
+
+        return context
+
+
+class SingleEvent(TemplateView):
+    model = Conference
+    template_name = 'single-event.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(SingleEvent, self).get_context_data(**kwargs)
+        context['event'] = get_object_or_404(self.model, id=self.kwargs.get('id'))
+
+        return context
