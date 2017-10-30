@@ -2,7 +2,7 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 
-from main.views import IndexView
+from main.views import *
 from maub import settings
 
 urlpatterns = [
@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^$', IndexView.as_view(), name='index'),
+    url(r'^conferences/', ConferenceView.as_view(), name='conference'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
