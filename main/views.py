@@ -18,8 +18,9 @@ class IndexView(TemplateView):
         return context
 
 
-class ConferenceView(TemplateView):
-    template_name = 'all_conferences.html'
+class ConferenceView(ListView):
+    template_name = 'events.html'
+    model = Conference
 
 
 class NewsView(ListView):
