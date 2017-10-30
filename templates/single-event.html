@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
+{% load staticfiles thumbnail %}
 
 {% block content %}
     <main class="single_event">
@@ -17,36 +17,20 @@
                     <p>{{ event.description }}</p>
                 </div>
             </div>
+            {% if event.event_image.all %}
+                <div class="gallery_slider" uk-lightbox="animation: scale">
+                    {% for item in event.event_image.all %}
+                        <div class="sl_slide">
+                            {% thumbnail item.image "380x320" as im %}
+                                <a class="uk-inline" href="{{ item.image.url }}" caption="Caption 1">
+                                    <img src="{{ im.url }}" alt="">
+                                </a>
+                            {% endthumbnail %}
 
-            <div class="gallery_slider" uk-lightbox="animation: scale">
-                <div class="sl_slide">
-                    <a class="uk-inline" href="img/slider-img.jpg" caption="Caption 1">
-                        <img src="img/news_img.jpg" alt="">
-                    </a>
+                        </div>
+                    {% endfor %}
                 </div>
-                <div class="sl_slide">
-                    <a class="uk-inline" href="//www.youtube.com/watch?v=4bzIpYiPUUo" caption="Caption 2">
-                        <img src="img/news_img.jpg" alt="">
-                    </a>
-                </div>
-                <div class="sl_slide">
-                    <a class="uk-inline" href="img/tabs-bg.jpg" caption="Caption 3">
-                        <img src="img/news_img.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a class="uk-inline" href="img/tabs-bg.jpg" caption="Caption 4">
-                        <img src="img/news_img.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="sl_slide">
-                    <a class="uk-inline" href="img/tabs-bg.jpg" caption="Caption 5">
-                        <img src="img/news_img.jpg" alt="">
-                    </a>
-                </div>
-            </div>
+            {% endif %}
         </div>
     </main>
 {% endblock %}

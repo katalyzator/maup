@@ -13,7 +13,7 @@ class News(models.Model):
     description = models.TextField(verbose_name='Описание')
     image = models.ImageField(upload_to='news/images', verbose_name='Картинка обложки')
     content = RichTextUploadingField(verbose_name='контент новости')
-    
+
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
@@ -83,3 +83,35 @@ class Conference(models.Model):
 
     def get_absolute_url(self):
         return "/conferences/%i/" % self.id
+
+
+class NewsImage(models.Model):
+    class Meta:
+        verbose_name_plural = 'Картинки новостей'
+        verbose_name = 'Картинку'
+
+    news = models.ForeignKey(News, related_name='news_image', verbose_name='choose News')
+    title = models.CharField(max_length=255, verbose_name='Title of image', blank=True, null=True)
+    image = models.ImageField(upload_to='images/news', verbose_name='Image any size')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+
+class EventImage(models.Model):
+    class Meta:
+        verbose_name_plural = 'Картинки мероприятий'
+        verbose_name = 'Картинку'
+
+    event = models.ForeignKey(Conference, related_name='event_image', verbose_name='choose Event')
+    title = models.CharField(max_length=255, verbose_name='Title of image', blank=True, null=True)
+    image = models.ImageField(upload_to='images/event', verbose_name='Image any size')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
