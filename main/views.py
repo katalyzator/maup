@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 
 from main.models import News, Slider, University, Conference
 
@@ -20,3 +20,8 @@ class IndexView(TemplateView):
 
 class ConferenceView(TemplateView):
     template_name = 'all_conferences.html'
+
+
+class NewsView(ListView):
+    model = News
+    template_name = 'news.html'

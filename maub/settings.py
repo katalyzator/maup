@@ -123,10 +123,10 @@ CKEDITOR_CONFIGS = {
 CKEDITOR_UPLOAD_PATH = "uploads/"
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maup", "static", "media")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maub", "static", "media")
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maup", "static", "static_root")
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maub", "static", "static_root")
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(BASE_DIR), "maup", "templates", "assets", "static_files"),
+    os.path.join(os.path.dirname(BASE_DIR), "maub", "templates", "assets", "static_files"),
 )

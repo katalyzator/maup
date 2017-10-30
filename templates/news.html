@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load staticfiles thumbnail %}
+
+{% block content %}
+    <main class="news_list">
+        <div class="uk-container">
+
+            <h4>haberler</h4>
+            <div class="all_news">
+                {% for new in news_list %}
+                    <div class="news">
+                        <div class="n_img">
+                            {% thumbnail new.image "380x180" as im %}
+                                    <img src="{{ im.url }}" alt="image">
+                                {% endthumbnail %}
+                        </div>
+
+                        <div class="n_desc">
+                            <h5>{{ new.title }}</h5>
+
+                            <p>{{ new.description }}</p>
+                        </div>
+
+                        <div class="n_date">
+                            <a href="#">Read more</a>
+                            <span>{{ new.timestamp|date:'d-M-Y, h:m' }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="show_more_button">
+                <a class="uk-button uk-button-default show_more" href="#">показать больше</a>
+            </div>
+
+        </div>
+    </main>
+{% endblock %}
