@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles thumbnail %}
-
+{% load staticfiles thumbnail i18n  %}
 {% block content %}
     <section class="sl_container">
         <div class="sl_block">
@@ -22,7 +21,7 @@
     <section class="news_container">
         <div class="uk-container">
             <div class="title">
-                <h4>Haberler ve duyurular</h4>
+                <h4>{% trans 'news' %}</h4>
                 <a href="#">Tum arhiv</a>
             </div>
 
@@ -56,7 +55,7 @@
     <section class="tabs_container">
         <div class="uk-container">
             <div class="title" id="about">
-                <h4>hakkimizda</h4>
+                <h4>{% trans 'about' %}</h4>
             </div>
         </div>
 
@@ -122,7 +121,7 @@
     <section class="universities_container" id="universities">
         <div class="uk-container">
             <div class="title">
-                <h4>kurucu uyeler</h4>
+                <h4>{% trans 'university' %}</h4>
                 <a href="#">Tum arhiv</a>
             </div>
 
@@ -192,7 +191,7 @@
     <section class="gallery_container" id="gallery">
         <div class="uk-container">
             <div class="title">
-                <h4>galeri</h4>
+                <h4>{% trans 'gallery' %}</h4>
             </div>
         </div>
 

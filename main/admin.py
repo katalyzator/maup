@@ -1,37 +1,61 @@
 # coding=utf-8
 from django.contrib import admin
+from modeltranslation.admin import TabbedExternalJqueryTranslationAdmin
+from modeltranslation.translator import TranslationOptions, translator
 
 from main.models import News, Slider, University, Conference, NewsImage, EventImage, Gallery
 
 admin.site.site_header = 'Панель управления сайтом MAUB.ORG'
 
 
-class NewsAdmin(admin.ModelAdmin):
+class NewsTranslationOptions(TranslationOptions):
+    fields = ('title', 'description', 'content')
+
+
+class EventTranslationOptions(TranslationOptions):
+    fields = ('title', 'description')
+
+
+class PosterTranslationOptions(TranslationOptions):
+    fields = ('title',)
+
+
+class UniversityTranslationOptions(TranslationOptions):
+    fields = ('name',)
+
+
+translator.register(News, NewsTranslationOptions)
+translator.register(Conference, EventTranslationOptions)
+translator.register(Slider, PosterTranslationOptions)
+translator.register(University, UniversityTranslationOptions)
+
+
+class NewsAdmin(TabbedExternalJqueryTranslationAdmin):
     class Meta:
         model = News
 
-    list_display = ['title', 'description']
+    list_display = ['title_tr', 'description']
 
 
-class SliderAdmin(admin.ModelAdmin):
+class SliderAdmin(TabbedExternalJqueryTranslationAdmin):
     class Meta:
         model = Slider
 
-    list_display = ['title']
+    list_display = ['title_tr']
 
 
-class UniversityAdmin(admin.ModelAdmin):
+class UniversityAdmin(TabbedExternalJqueryTranslationAdmin):
     class Meta:
         model = University
 
-    list_display = ['name']
+    list_display = ['name_tr']
 
 
-class ConferenceAdmin(admin.ModelAdmin):
+class ConferenceAdmin(TabbedExternalJqueryTranslationAdmin):
     class Meta:
         model = Conference
 
-    list_display = ['title', 'description', 'date_start']
+    list_display = ['title_tr', 'description', 'date_start']
 
 
 class NewsImageAdmin(admin.ModelAdmin):

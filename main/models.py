@@ -29,7 +29,7 @@ class Slider(models.Model):
         verbose_name_plural = 'Постеры'
         verbose_name = 'Постер'
 
-    title = models.TextField(verbose_name='Описание постера')
+    title = models.TextField(verbose_name='Описание постера', blank=True, null=True)
     image = models.ImageField(upload_to='images/slider', verbose_name='Картинка Постера')
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)

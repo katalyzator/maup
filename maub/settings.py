@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'ckeditor_uploader',
+    'modeltranslation',
     'main',
 
 ]
@@ -42,6 +44,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'solid_i18n.middleware.SolidLocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'maub.urls'
@@ -96,7 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'tr'
 
 TIME_ZONE = 'Asia/Bishkek'
 
@@ -117,6 +120,17 @@ CKEDITOR_CONFIGS = {
         'width': 800,
     },
 }
+
+LANGUAGES = (
+    ('en', 'Английский'),
+    ('tr', 'Турецкий'),
+)
+
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'tr'
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

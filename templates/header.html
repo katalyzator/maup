@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load staticfiles i18n %}
 
 <header uk-sticky>
     <div class="uk-container">
@@ -11,13 +11,13 @@
 
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="#">Ana sayfa</a></li>
-                    <li><a href="{% url 'all_news' %}">haberler ve duyurular</a></li>
-                    <li><a href="#about">hakkimizda</a></li>
-                    <li><a href="#universities">ÜNİVERSİTELER</a></li>
-                    <li><a href="{% url 'conference' %}">etkİnlİkler</a></li>
-                    <li><a href="#gallery">GALERİ</a></li>
-                    <li><a href="#contacts">İLETİŞİM</a></li>
+                    <li><a href="#">{% trans "main" %}</a></li>
+                    <li><a href="{% url 'all_news' %}">{% trans 'news' %}</a></li>
+                    <li><a href="#about">{% trans 'about' %}</a></li>
+                    <li><a href="#universities">{% trans 'university' %}</a></li>
+                    <li><a href="{% url 'conference' %}">{% trans 'activities' %}</a></li>
+                    <li><a href="#gallery">{% trans 'gallery' %}</a></li>
+                    <li><a href="#contacts">{% trans 'contact' %}</a></li>
                 </ul>
 
 {#                <select class="uk-select">#}
@@ -27,7 +27,7 @@
 {#                </select>#}
                 <ul class="languages">
                     <li><a href="/en">EN</a></li>
-                    <li><a href="/tr">TR</a></li>
+                    <li><a href="/">TR</a></li>
                 </ul>
 
 
