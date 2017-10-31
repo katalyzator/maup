@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 22:55+0600\n"
+"POT-Creation-Date: 2017-10-31 23:11+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "News and Announcement"
 msgid "about"
 msgstr "About"
 
-#: templates/header.html:18 templates/index.html:126
+#: templates/header.html:18 templates/index.html:99
 msgid "university"
 msgstr "Universities"
 
@@ -40,10 +40,88 @@ msgstr "Universities"
 msgid "activities"
 msgstr "Activites"
 
-#: templates/header.html:22 templates/index.html:196
+#: templates/header.html:22 templates/index.html:169
 msgid "gallery"
 msgstr "Gallery"
 
-#: templates/index.html:47 templates/index.html:163 templates/index.html:183
+#: templates/index.html:47 templates/index.html:136 templates/index.html:156
 msgid "more"
 msgstr "Read More"
+
+#: templates/index.html:68
+msgid "foundation"
+msgstr "Foundation"
+
+#: templates/index.html:69
+msgid "goals"
+msgstr "Goals and Objectives"
+
+#: templates/index.html:70
+msgid "main_activities"
+msgstr "Main Activities"
+
+#: templates/index.html:71
+msgid "procedure"
+msgstr "The Procedure"
+
+#: templates/index.html:72
+msgid "found_board"
+msgstr "Foundation Board"
+
+#: templates/index.html:79
+msgid "foundation_text"
+msgstr ""
+"The regulation is designed to establish the Central-Asian Universities "
+"Association (CAUA), which brings together universities in Central Asia and "
+"neighboring countries that have agreed to implement the joint productive "
+"activities in conformity with the following goals and objectives."
+
+#: templates/index.html:83
+msgid "goals_text"
+msgstr ""
+"The goals of the Central-Asian Universities Association are to expand "
+"cooperation among universities and organizations, promote "
+"internationalization, ensure academic mobility of students and teachers, "
+"develop joint degree and educational programs, and a unified credit transfer "
+"system, create the quality controlsystem and mechanisms for accreditation, "
+"as well as to develop projects promoting regional development,taking into "
+"account the strengths of member Universities of the Association. The "
+"Association will play an important role in scientific, economic and socio-"
+"cultural collaboration in Central Asia, and will enhance cooperation among "
+"the countries of the region and pave the way for a rapprochement of nations "
+"and peoples of the region."
+
+#: templates/index.html:85
+msgid "activity_text"
+msgstr ""
+"* Conferences, symposiums, seminars and workshops;<br>* Fairs, exhibitions "
+"and competitions;<br>* Activities to improve the professional "
+"qualifications, courses and summer schools;<br>* Joint multinational "
+"projects, which contribute to the development at the local and regional "
+"level;<br>* Projects aimed at bringing together the peoples and establishing "
+"intercultural dialogue/interaction;<br>* Projects on the exchange of "
+"students and lecturers;<br>* Programs on the exchange of experience between "
+"the managerial and administrative staff;<br>* Activities for the development "
+"of joint educational programs and the creation of credit-transfer system;"
+"<br>* Activities for the modernization of the system of quality control and "
+"accreditation;<br>* Activities for the creation of online networking with "
+"similar international organizations."
+
+#: templates/index.html:87
+msgid "procedure_text"
+msgstr ""
+"The Association shall be headed by the President of the Association, the "
+"General Meeting and the Board of the Association. All the heads of the "
+"member organizations of the Association shall be members of the General "
+"Meeting of the Association. The General Meeting of the Association shall "
+"appoint members of the Board of the Association for a period of 3 years. The "
+"Board of the Association shall appoint President of the Association for a "
+"period of 3 years."
+
+#: templates/index.html:89
+msgid "board_text"
+msgstr ""
+"Prior to the formation of the Association’s managerial boards, universities "
+"shall establish the Foundation Board of the Association in conformity with "
+"the abovementioned goals and objectives. Chairman of the Foundation Board of "
+"the Association is Rector of the Kyrgyz-Turkish Manas University."

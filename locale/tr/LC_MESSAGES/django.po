@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 22:55+0600\n"
+"POT-Creation-Date: 2017-10-31 23:11+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "haberler ve duyurular"
 msgid "about"
 msgstr "hakkimizda"
 
-#: templates/header.html:18 templates/index.html:126
+#: templates/header.html:18 templates/index.html:99
 msgid "university"
 msgstr "ÜNİVERSİTELER"
 
@@ -40,10 +40,91 @@ msgstr "ÜNİVERSİTELER"
 msgid "activities"
 msgstr "etkİnlİkler"
 
-#: templates/header.html:22 templates/index.html:196
+#: templates/header.html:22 templates/index.html:169
 msgid "gallery"
 msgstr "GALERİ"
 
-#: templates/index.html:47 templates/index.html:163 templates/index.html:183
+#: templates/index.html:47 templates/index.html:136 templates/index.html:156
 msgid "more"
 msgstr "Fazlasını göster"
+
+#: templates/index.html:68
+msgid "foundation"
+msgstr "Kuruluş"
+
+#: templates/index.html:69
+msgid "goals"
+msgstr "Amaç ve Hedefler"
+
+#: templates/index.html:70
+msgid "main_activities"
+msgstr "Temel Faaliyetler"
+
+#: templates/index.html:71
+msgid "procedure"
+msgstr "Birliğin Yönetim Şekli"
+
+#: templates/index.html:72
+msgid "found_board"
+msgstr "Kurucu Yürütme"
+
+#: templates/index.html:79
+msgid "foundation_text"
+msgstr ""
+"Merkezi Asya ve ona komşu olan ülkelerin üniversitelerinden aşağıdaki amaç "
+"ve hedefler doğrultusunda birlikte hareket etmeyi benimsemiş bulunan yüksek "
+"öğretim kurumlarının oluşturduğu Merkezi Asya Üniversiteler Birliği (MAÜB) "
+"kurulması hedeflenmiştir."
+
+#: templates/index.html:83
+msgid "goals_text"
+msgstr ""
+"Merkezi Asya’da bilimsel, ekonomik, sosyal ve kültürel işbirliğinde önemli "
+"rol oynayacağı, bölge ülkeleri arasındaki işbirliğinin güçlendirilmesine "
+"katkıda bulunacağı, bölge milletleri ve               "
+"halkları                        arasında yakınlaşmaya zemin hazırlayacağı "
+"inancı ile kurulan “Merkezi Asya Üniversiteler                        "
+"Birliği’nin” amacı üniversiteler, yükseköğretim kurumları ve bunlarla "
+"işbirliği yapan kurum ve                        kuruluşlar arasında "
+"işbirliğini artırmak, uluslararasılaşmayı desteklemek, öğretim elemanı "
+"ve                        öğrenci hareketliliğini sağlamak, ortak diploma "
+"programları geliştirmek, program geliştirme ve                        kredi "
+"transfer sistemleri üzerinde birliktelik sağlamak, kalite güvence sistemi "
+"oluşturmak ve                        akreditasyon mekanizmaları üzerinde "
+"çalışmak, üye olan üniversitelerin güçlü olduğu "
+"alanları                        dikkate alarak bölgesel kalkınmaya katkı "
+"sağlayacak projeleri geliştirmektir."
+
+#: templates/index.html:85
+msgid "activity_text"
+msgstr ""
+"* Kongreler, sempozyumlar, seminerler ve çalıştaylar <br> * Fuarlar, "
+"şölenler, sergiler, müsabakalar<br>              * Hizmet içi eğitim "
+"faaliyetleri, kurslar, yaz okulları<br>                        * Yerel ve "
+"bölgesel gelişmeyi destekleyecek çok uluslu ortak "
+"projeler<br>                        * Halkların yakınlaşması ve kültürler "
+"arası diyaloğa yönelik projeler<br>                        * Öğrenci, "
+"öğretim elemanı değişim projeleri<br>                        * Yönetici ve "
+"idari personel tecrübe paylaşım programları<br>                        * "
+"Ortak eğitim programı geliştirme ve kredi transfer sistemi oluşturma "
+"çalışmaları<br>                        * Kalite, güvence ve akreditasyona "
+"yönelik çalışmalar<br>                        * Benzeri uluslararası "
+"kuruluşlarla müştereken network oluşturma çalışmaları"
+
+#: templates/index.html:87
+msgid "procedure_text"
+msgstr ""
+"Birliğin organları; Birlik Başkanı, Birlik Genel Kurulu ve Birlik Yürütme "
+"Kuruludur. Birliğin                       Genel                        "
+"Kurulu, birliğe üye olan bütün üniversitelerden oluşur. Birlik Yürütme "
+"Kurulu Birlik Genel                        Kurulu                        "
+"tarafından 3 yıl için seçilir. Birliğin Başkanı Birlik Yürütme Kurulu "
+"tarafından 3 yıl için                        seçilir."
+
+#: templates/index.html:89
+msgid "board_text"
+msgstr ""
+"Birliğin organları oluşturulana kadar yukarıdaki amaç ve hedefler "
+"doğrultusunda bir araya gelen                        üniversiteler kurucu "
+"yürütme kurulunu oluşturur, kurucu yürütme kurulunun başkanı "
+"Kırgızistan-                        Türkiye Manas Üniversitesi Rektörüdür."
