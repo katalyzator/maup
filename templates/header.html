@@ -7,29 +7,32 @@
             <a class="uk-navbar-item uk-logo" href="{% url 'index' %}">
                 <img src="{% static 'img/logo.png' %}" alt="">
             </a>
-            <p>MERKEZİ ASYA <br> ÜNİVERSİTELER BİRLİĞİ</p>
+            <p>{% trans 'slogan' %}</p>
 
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="#">{% trans "main" %}</a></li>
+                    <li><a href="{% url 'index' %}">{% trans "main" %}</a></li>
                     <li><a href="{% url 'all_news' %}">{% trans 'news' %}</a></li>
-                    <li><a href="#about">{% trans 'about' %}</a></li>
-                    <li><a href="#universities">{% trans 'university' %}</a></li>
+                    {% if index %}
+                        <li><a href="#about">{% trans 'about' %}</a></li>
+                        <li><a href="#universities">{% trans 'university' %}</a></li>
+                    {% endif %}
                     <li><a href="{% url 'conference' %}">{% trans 'activities' %}</a></li>
-                    <li><a href="#gallery">{% trans 'gallery' %}</a></li>
-                    <li><a href="#contacts">{% trans 'contact' %}</a></li>
+                    {% if index %}
+                        <li><a href="#gallery">{% trans 'gallery' %}</a></li>
+                        <li><a href="#contacts">{% trans 'contact' %}</a></li>
+                    {% endif %}
                 </ul>
 
-{#                <select class="uk-select">#}
-{#                    <option><a href="/en">EN</a></option>#}
-{#                    <option>KG</option>#}
-{#                    <option>TR</option>#}
-{#                </select>#}
+                {#                <select class="uk-select">#}
+                {#                    <option><a href="/en">EN</a></option>#}
+                {#                    <option>KG</option>#}
+                {#                    <option>TR</option>#}
+                {#                </select>#}
                 <ul class="languages">
                     <li><a href="/en">EN</a></li>
                     <li><a href="/">TR</a></li>
                 </ul>
-
 
 
             </div>

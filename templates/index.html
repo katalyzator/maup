@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles thumbnail i18n  %}
+{% load staticfiles thumbnail i18n %}
 {% block content %}
     <section class="sl_container">
         <div class="sl_block">
@@ -10,7 +10,9 @@
                         {% thumbnail item.image "1354x655" as im %}
                             <img src="{{ im.url }}" alt="image">
                         {% endthumbnail %}
-                        <h1>{{ item.title }}</h1>
+                        {% if item.title %}
+                            <h1>{{ item.title }}</h1>
+                        {% endif %}
                         <div class="sl_hover"></div>
                     </div>
                 {% endfor %}
@@ -22,7 +24,7 @@
         <div class="uk-container">
             <div class="title">
                 <h4>{% trans 'news' %}</h4>
-                <a href="#">Tum arhiv</a>
+                <a href="#"></a>
             </div>
 
             <div class="news_slider">
@@ -42,7 +44,7 @@
                             </div>
 
                             <div class="n_date">
-                                <a href="{{ item.get_absolute_url }}">Fazlasını göster</a>
+                                <a href="{% url 'single_news' item.id %}">{% trans 'more' %}</a>
                                 <span>{{ item.timestamp|date:'d-M-Y, h:m' }}</span>
                             </div>
                         </div>
@@ -122,7 +124,7 @@
         <div class="uk-container">
             <div class="title">
                 <h4>{% trans 'university' %}</h4>
-                <a href="#">Tum arhiv</a>
+                <a href="#"></a>
             </div>
 
             <div class="universities_slider">
@@ -158,7 +160,7 @@
                                 <h5>{{ konferens.title }}</h5>
                                 <p>{{ konferens.description }}</p>
 
-                                <a href="{{ konferens.get_absolute_url }}">Fazlasını göster</a>
+                                <a href="{% url 'single_event' konferens.id %}">{% trans 'more' %} </a>
                             </div>
                         </div>
                     {% endfor %}
@@ -178,7 +180,7 @@
                                 <h5>{{ konferens.title }}</h5>
                                 <p>{{ konferens.description }}</p>
 
-                                <a href="{{ konferens.get_absolute_url }}">Fazlasını göster</a>
+                                <a href="{% url 'single_event' konferens.id %}">{% trans 'more' %} </a>
                             </div>
                         </div>
                     {% endfor %}

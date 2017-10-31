@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{% load staticfiles thumbnail %}
+{% load staticfiles thumbnail i18n %}
 
 {% block content %}
     <main class="news_list">
         <div class="uk-container">
 
-            <h4>haberler</h4>
+            <h4>{% trans 'news' %}</h4>
             <div class="all_news">
                 {% for new in news_list %}
                     <div class="news">
@@ -23,7 +23,7 @@
                         </div>
 
                         <div class="n_date">
-                            <a href="#">Fazlasını göster</a>
+                            <a href="{% url 'single_news' new.id %}">Fazlasını göster</a>
                             <span>{{ new.timestamp|date:'d-M-Y, h:m' }}</span>
                         </div>
                     </div>
