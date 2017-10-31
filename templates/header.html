@@ -1,6 +1,6 @@
 {% load staticfiles %}
 
-<header>
+<header uk-sticky>
     <div class="uk-container">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
@@ -13,18 +13,24 @@
                 <ul class="uk-navbar-nav">
                     <li><a href="#">Ana sayfa</a></li>
                     <li><a href="{% url 'all_news' %}">haberler ve duyurular</a></li>
-                    <li><a href="#">hakkimizda</a></li>
-                    <li><a href="#">ÜNİVERSİTELER</a></li>
+                    <li><a href="#about">hakkimizda</a></li>
+                    <li><a href="#universities">ÜNİVERSİTELER</a></li>
                     <li><a href="{% url 'conference' %}">etkİnlİkler</a></li>
-                    <li><a href="#">GALERİ</a></li>
-                    <li><a href="#">İLETİŞİM</a></li>
+                    <li><a href="#gallery">GALERİ</a></li>
+                    <li><a href="#contacts">İLETİŞİM</a></li>
                 </ul>
 
-                <select class="uk-select">
-                    <option>EN</option>
-                    <option>KG</option>
-                    <option>TR</option>
-                </select>
+{#                <select class="uk-select">#}
+{#                    <option><a href="/en">EN</a></option>#}
+{#                    <option>KG</option>#}
+{#                    <option>TR</option>#}
+{#                </select>#}
+                <ul class="languages">
+                    <li><a href="/en">EN</a></li>
+                    <li><a href="/tr">TR</a></li>
+                </ul>
+
+
 
             </div>
 

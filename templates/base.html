@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
-<body>
-
+{% if index == 'index' %}
+    <body class="fixed_header">
+{% else %}
+    <body>
+{% endif %}
 {% include 'header.html' %}
 
 {% block content %}{% endblock content %}

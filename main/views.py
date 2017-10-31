@@ -16,6 +16,7 @@ class IndexView(TemplateView):
         context['congre'] = Conference.objects.filter(active=True, mode='kongre')[:2]
         context['konferans'] = Conference.objects.filter(active=True, mode='conference')[:2]
         context['gallery'] = Gallery.objects.all()
+        context['index'] = 'index'
 
         return context
 
