@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles thumbnail %}
+{% load staticfiles thumbnail i18n %}
 
 {% block content %}
 
@@ -9,8 +9,8 @@
         <div class="uk-container">
             <ul class="uk-subnav uk-subnav-pill"
                 uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-                <li><a href="#">konferanslar</a></li>
-                <li><a href="#">kongreller</a></li>
+                <li><a href="#">{% trans 'confer' %}</a></li>
+                <li><a href="#">{% trans 'kongre' %}</a></li>
             </ul>
 
             <ul class="uk-switcher">
@@ -29,7 +29,7 @@
                                         <h5>{{ item.title }}</h5>
                                         <p>{{ item.description }}</p>
 
-                                        <a href="{% url 'single_event' item.id %}">Fazlasını göster</a>
+                                        <a href="{% url 'single_event' item.id %}">{% trans 'more' %}</a>
                                     </div>
                                 </div>
                             {% endif %}

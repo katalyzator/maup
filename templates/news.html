@@ -23,7 +23,7 @@
                         </div>
 
                         <div class="n_date">
-                            <a href="{% url 'single_news' new.id %}">Fazlasını göster</a>
+                            <a href="{% url 'single_news' new.id %}">{% trans 'more' %}</a>
                             <span>{{ new.timestamp|date:'d-M-Y, h:m' }}</span>
                         </div>
                     </div>
