@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 23:11+0600\n"
+"POT-Creation-Date: 2017-11-01 23:18+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,30 @@ msgstr ""
 #: templates/footer.html:5 templates/header.html:23
 msgid "contact"
 msgstr "İLETİŞİM"
+
+#: templates/footer.html:10
+msgid "name_input"
+msgstr "ad"
+
+#: templates/footer.html:14
+msgid "number_input"
+msgstr "Telefon numarası"
+
+#: templates/footer.html:22
+msgid "message"
+msgstr "Mesaj"
+
+#: templates/footer.html:25
+msgid "submit"
+msgstr "Submit"
+
+#: templates/footer.html:39
+msgid "numbers"
+msgstr "telefonlar"
+
+#: templates/footer.html:45
+msgid "fax"
+msgstr "faks numaralarımız"
 
 #: templates/header.html:10
 msgid "slogan"
@@ -30,7 +54,7 @@ msgstr "haberler ve duyurular"
 
 #: templates/header.html:17 templates/index.html:60
 msgid "about"
-msgstr "hakkimizda"
+msgstr "hakkımızda"
 
 #: templates/header.html:18 templates/index.html:99
 msgid "university"
@@ -128,3 +152,11 @@ msgstr ""
 "doğrultusunda bir araya gelen                        üniversiteler kurucu "
 "yürütme kurulunu oluşturur, kurucu yürütme kurulunun başkanı "
 "Kırgızistan-                        Türkiye Manas Üniversitesi Rektörüdür."
+
+#: templates/index.html:123
+msgid "confer"
+msgstr "Konferanslar"
+
+#: templates/index.html:143
+msgid "kongre"
+msgstr "Kongreler"

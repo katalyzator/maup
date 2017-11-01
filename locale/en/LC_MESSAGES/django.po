@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 23:11+0600\n"
+"POT-Creation-Date: 2017-11-01 23:18+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,9 +16,33 @@ msgstr ""
 msgid "contact"
 msgstr "Contacts"
 
+#: templates/footer.html:10
+msgid "name_input"
+msgstr "Name"
+
+#: templates/footer.html:14
+msgid "number_input"
+msgstr "Phone number"
+
+#: templates/footer.html:22
+msgid "message"
+msgstr "Message"
+
+#: templates/footer.html:25
+msgid "submit"
+msgstr "gönder"
+
+#: templates/footer.html:39
+msgid "numbers"
+msgstr "Numbers"
+
+#: templates/footer.html:45
+msgid "fax"
+msgstr "Fax"
+
 #: templates/header.html:10
 msgid "slogan"
-msgstr "CENTRAL-ASIAN <br> UNIVERSITIES ASSOCIATION"
+msgstr "CENTRAL ASIAN <br> UNIVERSITIES ASSOCIATION"
 
 #: templates/header.html:14
 msgid "main"
@@ -71,7 +95,7 @@ msgstr "Foundation Board"
 #: templates/index.html:79
 msgid "foundation_text"
 msgstr ""
-"The regulation is designed to establish the Central-Asian Universities "
+"The regulation is designed to establish the Central Asian Universities "
 "Association (CAUA), which brings together universities in Central Asia and "
 "neighboring countries that have agreed to implement the joint productive "
 "activities in conformity with the following goals and objectives."
@@ -79,7 +103,7 @@ msgstr ""
 #: templates/index.html:83
 msgid "goals_text"
 msgstr ""
-"The goals of the Central-Asian Universities Association are to expand "
+"The goals of the Central Asian Universities Association are to expand "
 "cooperation among universities and organizations, promote "
 "internationalization, ensure academic mobility of students and teachers, "
 "develop joint degree and educational programs, and a unified credit transfer "
@@ -125,3 +149,11 @@ msgstr ""
 "shall establish the Foundation Board of the Association in conformity with "
 "the abovementioned goals and objectives. Chairman of the Foundation Board of "
 "the Association is Rector of the Kyrgyz-Turkish Manas University."
+
+#: templates/index.html:123
+msgid "confer"
+msgstr "Conferencies"
+
+#: templates/index.html:143
+msgid "kongre"
+msgstr "Assemblies"

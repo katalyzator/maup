@@ -7,11 +7,11 @@
             <div>
                 <form action="#">
                     <label for="name">
-                        <input type="text" id="name" placeholder="İsim">
+                        <input type="text" id="name" placeholder="{% trans 'name_input' %}">
                     </label>
 
                     <label for="number">
-                        <input type="text" id="number" placeholder="Telefon numarası">
+                        <input type="text" id="number" placeholder="{% trans 'number_input' %}">
                     </label>
 
                     <label for="email">
@@ -19,10 +19,10 @@
                     </label>
 
                     <label for="comment">
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Mesaj"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="{% trans 'message' %}"></textarea>
                     </label>
 
-                    <button type="submit">gönder</button>
+                    <button type="submit">{% trans 'submit' %}</button>
                 </form>
             </div>
             <div>
@@ -36,19 +36,19 @@
         <div class="uk-child-width-1-3@m" uk-grid>
             <div class="contacts">
                 <div>
-                    <h5>Bizim telefonlar</h5>
+                    <h5>{% trans 'numbers' %}</h5>
                     <p>+996 312 49 27 88 <br> +996 312 49 27 86</p>
                 </div>
             </div>
             <div class="contacts">
                 <div>
-                    <h5>Bizim faks numaralarımız</h5>
+                    <h5>{% trans 'fax' %}</h5>
                     <p>+996 312 49 27 81-89 <br> +996 312 49 27 61</p>
                 </div>
             </div>
             <div class="contacts">
                 <div>
-                    <h5>Bizim E-mail</h5>
+                    <h5>E-mail</h5>
                     <p> iro@manas.edu.kg</p>
                 </div>
             </div>

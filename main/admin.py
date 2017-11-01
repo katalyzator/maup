@@ -9,7 +9,7 @@ admin.site.site_header = 'Панель управления сайтом MAUB.OR
 
 
 class NewsTranslationOptions(TranslationOptions):
-    fields = ('title', 'description', 'content')
+    fields = ('title', 'description', 'content', 'files')
 
 
 class EventTranslationOptions(TranslationOptions):

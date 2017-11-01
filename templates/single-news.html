@@ -15,6 +15,9 @@
                     <h5>{{ news.title }}</h5>
                     <span>{{ news.timestamp|date:'d.m.y' }}</span>
                     {{ news.content|safe }}
+                    {% if news.files %}
+                        <h5><a href="{{ news.files.url }}"  download="{{ news.title }}" target="_blank">Скачать файл</a></h5>
+                    {% endif %}
                 </div>
             </div>
 

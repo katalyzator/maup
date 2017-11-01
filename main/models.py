@@ -13,8 +13,10 @@ class News(models.Model):
     description = models.TextField(verbose_name='Описание')
     image = models.ImageField(upload_to='news/images', verbose_name='Картинка обложки')
     content = RichTextUploadingField(verbose_name='контент новости')
+    files = models.FileField(upload_to='files/news', blank=True, null=True,
+                             verbose_name='файл для скачивания (Any Files)')
 
-    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    timestamp = models.DateField()
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __unicode__(self):
