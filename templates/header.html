@@ -12,11 +12,13 @@
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li><a href="{% url 'index' %}">{% trans "main" %}</a></li>
-                    <li><a href="{% url 'all_news' %}">{% trans 'news' %}</a></li>
+
                     {% if index %}
                         <li><a href="#about">{% trans 'about' %}</a></li>
-                        <li><a href="#universities">{% trans 'university' %}</a></li>
+
                     {% endif %}
+                    <li><a href="{% url 'universities' %}">{% trans 'university' %}</a></li>
+                    <li><a href="{% url 'all_news' %}">{% trans 'news' %}</a></li>
                     <li><a href="{% url 'conference' %}">{% trans 'activities' %}</a></li>
                     {% if index %}
                         <li><a href="#gallery">{% trans 'gallery' %}</a></li>
