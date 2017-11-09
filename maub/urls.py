@@ -16,6 +16,7 @@ urlpatterns += solid_i18n_patterns(
     url(r'^news/$', NewsView.as_view(), name='all_news'),
     url(r'^news/(?P<id>\d+)/$', SingleNews.as_view(), name='single_news'),
     url(r'^conferences/(?P<id>\d+)/$', SingleEvent.as_view(), name='single_event'),
+    url(r'^universities/', UniversityView.as_view(), name='universities')
 )
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

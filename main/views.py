@@ -51,3 +51,8 @@ class SingleEvent(TemplateView):
         context['event'] = get_object_or_404(self.model, id=self.kwargs.get('id'))
 
         return context
+
+
+class UniversityView(TemplateView):
+    model = University
+    template_name = 'universities.html'

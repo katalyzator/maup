@@ -42,6 +42,11 @@ class Slider(models.Model):
 
 
 class University(models.Model):
+    EXTRA_CHOICES = (
+        ('kurucu', 'Kurucu Uye'),
+        ('tum', 'Tum uye'),
+    )
+
     class Meta:
         verbose_name_plural = 'Университеты'
         verbose_name = 'университет'
@@ -49,6 +54,7 @@ class University(models.Model):
     name = models.CharField(max_length=1000, verbose_name='Название Университета')
     image = models.ImageField(upload_to='images/universities', verbose_name='Картинка')
     link = models.URLField(blank=True, null=True)
+    mode = models.CharField(choices=EXTRA_CHOICES, max_length=20, verbose_name='Выберите тип')
     active = models.BooleanField(default=False, verbose_name='Поставьте галочку если это '
                                                              'один из главных Университетов')
 
@@ -129,6 +135,19 @@ class Gallery(models.Model):
 
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+
+class MainUniversity(models.Model):
+    class Meta:
+        verbose_name_plural = 'Страница университетов'
+        verbose_name = 'объект'
+
+    title = models.CharField(max_length=255, verbose_name='Название Страны')
+    image = models.ImageField(upload_to='images/countries',  verbose_name='Карта страны')
+    university = models.ManyToManyField(University,max_length=20, verbose_name='Выберите университеты')
 
     def __unicode__(self):
         return smart_unicode(self.title)

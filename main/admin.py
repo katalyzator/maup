@@ -3,7 +3,7 @@ from django.contrib import admin
 from modeltranslation.admin import TabbedExternalJqueryTranslationAdmin
 from modeltranslation.translator import TranslationOptions, translator
 
-from main.models import News, Slider, University, Conference, NewsImage, EventImage, Gallery
+from main.models import News, Slider, University, Conference, NewsImage, EventImage, Gallery, MainUniversity
 
 admin.site.site_header = 'Панель управления сайтом MAUB.ORG'
 
@@ -79,6 +79,14 @@ class GalleryImageAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 
+class MainUniversityAdmin(admin.ModelAdmin):
+    class Meta:
+        model = MainUniversity
+
+    list_display = ['title']
+
+
+admin.site.register(MainUniversity, MainUniversityAdmin)
 admin.site.register(Gallery, GalleryImageAdmin)
 admin.site.register(NewsImage, NewsImageAdmin)
 admin.site.register(EventImage, EventImageAdmin)
