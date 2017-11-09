@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-01 23:22+0600\n"
+"POT-Creation-Date: 2017-11-09 20:44+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,6 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/events.html:12 templates/index.html:122
+msgid "confer"
+msgstr "Konferanslar"
+
+#: templates/events.html:13 templates/index.html:142
+msgid "kongre"
+msgstr "Kongreler"
+
+#: templates/events.html:32 templates/index.html:46 templates/index.html:135
+#: templates/index.html:155 templates/news.html:26
+msgid "more"
+msgstr "Fazlasını göster"
 
 #: templates/footer.html:5 templates/header.html:23
 msgid "contact"
@@ -50,13 +63,14 @@ msgstr "Ana sayfa"
 
 #: templates/header.html:15 templates/index.html:26 templates/news.html:9
 msgid "news"
-msgstr "haberler ve duyurular"
+msgstr "duyurular"
 
-#: templates/header.html:17 templates/index.html:60
+#: templates/header.html:17 templates/index.html:59
 msgid "about"
 msgstr "hakkımızda"
 
-#: templates/header.html:18 templates/index.html:99
+#: templates/header.html:18 templates/index.html:98
+#: templates/universities.html:10
 msgid "university"
 msgstr "ÜNİVERSİTELER"
 
@@ -64,35 +78,31 @@ msgstr "ÜNİVERSİTELER"
 msgid "activities"
 msgstr "etkİnlİkler"
 
-#: templates/header.html:22 templates/index.html:169
+#: templates/header.html:22 templates/index.html:168
 msgid "gallery"
 msgstr "GALERİ"
 
-#: templates/index.html:47 templates/index.html:136 templates/index.html:156
-msgid "more"
-msgstr "Fazlasını göster"
-
-#: templates/index.html:68
+#: templates/index.html:67
 msgid "foundation"
 msgstr "Kuruluş"
 
-#: templates/index.html:69
+#: templates/index.html:68
 msgid "goals"
 msgstr "Amaç ve Hedefler"
 
-#: templates/index.html:70
+#: templates/index.html:69
 msgid "main_activities"
 msgstr "Temel Faaliyetler"
 
-#: templates/index.html:71
+#: templates/index.html:70
 msgid "procedure"
 msgstr "Birliğin Yönetim Şekli"
 
-#: templates/index.html:72
+#: templates/index.html:71
 msgid "found_board"
 msgstr "Kurucu Yürütme"
 
-#: templates/index.html:79
+#: templates/index.html:78
 msgid "foundation_text"
 msgstr ""
 "Merkezi Asya ve ona komşu olan ülkelerin üniversitelerinden aşağıdaki amaç "
@@ -100,7 +110,7 @@ msgstr ""
 "öğretim kurumlarının oluşturduğu Merkezi Asya Üniversiteler Birliği (MAÜB) "
 "kurulması hedeflenmiştir."
 
-#: templates/index.html:83
+#: templates/index.html:82
 msgid "goals_text"
 msgstr ""
 "Merkezi Asya’da bilimsel, ekonomik, sosyal ve kültürel işbirliğinde önemli "
@@ -119,7 +129,7 @@ msgstr ""
 "alanları                        dikkate alarak bölgesel kalkınmaya katkı "
 "sağlayacak projeleri geliştirmektir."
 
-#: templates/index.html:85
+#: templates/index.html:84
 msgid "activity_text"
 msgstr ""
 "* Kongreler, sempozyumlar, seminerler ve çalıştaylar <br> * Fuarlar, "
@@ -135,7 +145,7 @@ msgstr ""
 "yönelik çalışmalar<br>                        * Benzeri uluslararası "
 "kuruluşlarla müştereken network oluşturma çalışmaları"
 
-#: templates/index.html:87
+#: templates/index.html:86
 msgid "procedure_text"
 msgstr ""
 "Birliğin organları; Birlik Başkanı, Birlik Genel Kurulu ve Birlik Yürütme "
@@ -145,7 +155,7 @@ msgstr ""
 "tarafından 3 yıl için seçilir. Birliğin Başkanı Birlik Yürütme Kurulu "
 "tarafından 3 yıl için                        seçilir."
 
-#: templates/index.html:89
+#: templates/index.html:88
 msgid "board_text"
 msgstr ""
 "Birliğin organları oluşturulana kadar yukarıdaki amaç ve hedefler "
@@ -153,10 +163,10 @@ msgstr ""
 "yürütme kurulunu oluşturur, kurucu yürütme kurulunun başkanı "
 "Kırgızistan-                        Türkiye Manas Üniversitesi Rektörüdür."
 
-#: templates/index.html:123
-msgid "confer"
-msgstr "Konferanslar"
+#: templates/universities.html:14
+msgid "kurucu"
+msgstr "kurucu Üyeler"
 
-#: templates/index.html:143
-msgid "kongre"
-msgstr "Kongreler"
+#: templates/universities.html:15
+msgid "all_members"
+msgstr "TÜm Üyeler"

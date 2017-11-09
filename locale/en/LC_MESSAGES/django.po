@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-01 23:22+0600\n"
+"POT-Creation-Date: 2017-11-09 20:44+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,6 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/events.html:12 templates/index.html:122
+msgid "confer"
+msgstr "Conferences"
+
+#: templates/events.html:13 templates/index.html:142
+msgid "kongre"
+msgstr "Congresses"
+
+#: templates/events.html:32 templates/index.html:46 templates/index.html:135
+#: templates/index.html:155 templates/news.html:26
+msgid "more"
+msgstr "Read More"
 
 #: templates/footer.html:5 templates/header.html:23
 msgid "contact"
@@ -50,13 +63,14 @@ msgstr "Main Page"
 
 #: templates/header.html:15 templates/index.html:26 templates/news.html:9
 msgid "news"
-msgstr "News and Announcement"
+msgstr "Announcements"
 
-#: templates/header.html:17 templates/index.html:60
+#: templates/header.html:17 templates/index.html:59
 msgid "about"
 msgstr "About"
 
-#: templates/header.html:18 templates/index.html:99
+#: templates/header.html:18 templates/index.html:98
+#: templates/universities.html:10
 msgid "university"
 msgstr "Universities"
 
@@ -64,35 +78,31 @@ msgstr "Universities"
 msgid "activities"
 msgstr "Activites"
 
-#: templates/header.html:22 templates/index.html:169
+#: templates/header.html:22 templates/index.html:168
 msgid "gallery"
 msgstr "Gallery"
 
-#: templates/index.html:47 templates/index.html:136 templates/index.html:156
-msgid "more"
-msgstr "Read More"
-
-#: templates/index.html:68
+#: templates/index.html:67
 msgid "foundation"
 msgstr "Foundation"
 
-#: templates/index.html:69
+#: templates/index.html:68
 msgid "goals"
 msgstr "Goals and Objectives"
 
-#: templates/index.html:70
+#: templates/index.html:69
 msgid "main_activities"
 msgstr "Main Activities"
 
-#: templates/index.html:71
+#: templates/index.html:70
 msgid "procedure"
 msgstr "The Procedure"
 
-#: templates/index.html:72
+#: templates/index.html:71
 msgid "found_board"
 msgstr "Foundation Board"
 
-#: templates/index.html:79
+#: templates/index.html:78
 msgid "foundation_text"
 msgstr ""
 "The regulation is designed to establish the Central Asian Universities "
@@ -100,7 +110,7 @@ msgstr ""
 "neighboring countries that have agreed to implement the joint productive "
 "activities in conformity with the following goals and objectives."
 
-#: templates/index.html:83
+#: templates/index.html:82
 msgid "goals_text"
 msgstr ""
 "The goals of the Central Asian Universities Association are to expand "
@@ -115,7 +125,7 @@ msgstr ""
 "the countries of the region and pave the way for a rapprochement of nations "
 "and peoples of the region."
 
-#: templates/index.html:85
+#: templates/index.html:84
 msgid "activity_text"
 msgstr ""
 "* Conferences, symposiums, seminars and workshops;<br>* Fairs, exhibitions "
@@ -131,7 +141,7 @@ msgstr ""
 "accreditation;<br>* Activities for the creation of online networking with "
 "similar international organizations."
 
-#: templates/index.html:87
+#: templates/index.html:86
 msgid "procedure_text"
 msgstr ""
 "The Association shall be headed by the President of the Association, the "
@@ -142,7 +152,7 @@ msgstr ""
 "Board of the Association shall appoint President of the Association for a "
 "period of 3 years."
 
-#: templates/index.html:89
+#: templates/index.html:88
 msgid "board_text"
 msgstr ""
 "Prior to the formation of the Association’s managerial boards, universities "
@@ -150,10 +160,10 @@ msgstr ""
 "the abovementioned goals and objectives. Chairman of the Foundation Board of "
 "the Association is Rector of the Kyrgyz-Turkish Manas University."
 
-#: templates/index.html:123
-msgid "confer"
-msgstr "Conferences"
+#: templates/universities.html:14
+msgid "kurucu"
+msgstr "founders"
 
-#: templates/index.html:143
-msgid "kongre"
-msgstr "Congresses"
+#: templates/universities.html:15
+msgid "all_members"
+msgstr ""
