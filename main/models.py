@@ -146,8 +146,8 @@ class MainUniversity(models.Model):
         verbose_name = 'объект'
 
     title = models.CharField(max_length=255, verbose_name='Название Страны')
-    image = models.ImageField(upload_to='images/countries',  verbose_name='Карта страны')
-    university = models.ManyToManyField(University,max_length=20, verbose_name='Выберите университеты')
+    image = models.ImageField(upload_to='images/countries', verbose_name='Карта страны')
+    university = models.ManyToManyField(University, max_length=20, verbose_name='Выберите университеты', related_name='country_university')
 
     def __unicode__(self):
         return smart_unicode(self.title)

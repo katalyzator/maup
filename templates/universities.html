@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
+{% load staticfiles thumbnail %}
 
 {% block content %}
     <main class="events_list universities_list">
@@ -18,202 +18,57 @@
             <ul class="uk-switcher">
                 <li>
                     <div class="universities">
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
+                        {% for item in country %}
+                            <div class="university_card">
+                                <div class="university_img">
+                                    {% thumbnail item.image "370x215" as im %}
+                                        <img src="{{ im.url }}" alt="img">
+                                    {% endthumbnail %}
+                                </div>
+
+                                <div class="c_universities">
+                                    <ol>
+                                        {% for university in item.university.all %}
+                                            {% if university.mode == 'kurucu' %}
+                                                <li><a href="{{ university.link }}"
+                                                       target="_blank">{{ university.name }}</a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+
                             </div>
 
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
+                        {% endfor %}
 
-                        </div>
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="universities">
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
+
+                        {% for item in country %}
+                            <div class="university_card">
+                                <div class="university_img">
+                                    {% thumbnail item.image "370x215" as im %}
+                                        <img src="{{ im.url }}" alt="img">
+                                    {% endthumbnail %}
+                                </div>
+
+                                <div class="c_universities">
+                                    <ol>
+                                        {% for university in item.university.all %}
+                                                <li><a href="{{ university.link }}"
+                                                       target="_blank">{{ university.name }}</a>
+                                                </li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+
                             </div>
 
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
+                        {% endfor %}
 
-                        </div>
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
-
-                        <div class="university_card">
-                            <div class="university_img">
-                                <img src="{% static 'img/turkey.png' %}" alt="img">
-                            </div>
-
-                            <div class="c_universities">
-                                <ol>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi asdfdas sadfads</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                    <li><a href="#" target="_blank">kyrgyz turk manas universitesi</a></li>
-                                </ol>
-                            </div>
-
-                        </div>
                     </div>
                 </li>
             </ul>

@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 
 from django.views.generic import TemplateView, ListView, DetailView
 
-from main.models import News, Slider, University, Conference, Gallery
+from main.models import News, Slider, University, Conference, Gallery, MainUniversity
 
 
 class IndexView(TemplateView):
@@ -56,3 +56,9 @@ class SingleEvent(TemplateView):
 class UniversityView(TemplateView):
     model = University
     template_name = 'universities.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(UniversityView, self).get_context_data(**kwargs)
+        context['country'] = MainUniversity.objects.all()
+
+        return context
