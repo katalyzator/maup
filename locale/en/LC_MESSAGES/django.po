@@ -43,7 +43,7 @@ msgstr "Message"
 
 #: templates/footer.html:25
 msgid "submit"
-msgstr "gönder"
+msgstr "Submit"
 
 #: templates/footer.html:39
 msgid "numbers"
