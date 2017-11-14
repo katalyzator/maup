@@ -8354,32 +8354,10 @@ p {
 
 .events_container .uk-container {
     padding-top: 80px;
-    display: flex
-}
-
-.events_container .uk-container > div:first-of-type {
-    border-right: 1px solid #2b2b62
-}
-
-.events_container .uk-container > div:first-of-type .events {
-    padding-right: 20px
-}
-
-.events_container .uk-container > div:last-of-type .events {
-    padding-left: 20px
 }
 
 .events_block {
-    width: 50%
-}
-
-.events_block h4 {
-    color: #000;
-    background-color: transparent;
-    max-width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 1px solid #2b2b62
+    width: 100%;
 }
 
 .events_block .events {
@@ -8387,7 +8365,8 @@ p {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .event, .events_list .uk-switcher .events {
@@ -8401,7 +8380,8 @@ p {
 .event {
     width: 270px;
     height: auto;
-    display: flex
+    display: flex;
+    margin-right: 40px;
 }
 
 .event .date span {
@@ -8430,6 +8410,10 @@ p {
 
 .event .e_desc a {
     color: #2b2b62
+}
+
+.events_block > div.event:nth-child(4n) {
+    margin-right: 0;
 }
 
 .gallery_container > .uk-container {
@@ -8595,23 +8579,21 @@ footer .uk-container iframe {
 }
 
 .events_list .uk-subnav li {
-    width: 50%;
+    width: 100%;
     padding-left: 0;
-    border: 1px solid #2b2b62;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px
 }
 
 .events_list .uk-subnav li.uk-active a {
-    background-color: #2b2b62;
-    color: #fff
+    background-color: transparent;
+    color: #2b2b62;
 }
 
 .events_list .uk-subnav li a {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    color: #8c8a8a;
-    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2b2b62;
+    text-align: left;
     padding: 10px 0
 }
 

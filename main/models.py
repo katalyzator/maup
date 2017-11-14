@@ -66,16 +66,10 @@ class University(models.Model):
 
 
 class Conference(models.Model):
-    EXTRA_CHOICES = (
-        ('conference', 'Konferens'),
-        ('kongre', 'Kongre'),
-    )
-
     class Meta:
         verbose_name_plural = 'Концеренции'
         verbose_name = 'объект'
 
-    mode = models.CharField(max_length=20, choices=EXTRA_CHOICES, verbose_name='Выберите тип')
     title = models.CharField(max_length=255, verbose_name='Название')
     description = models.TextField(verbose_name='Описание')
     date_start = models.DateField(verbose_name='Дата проведения')

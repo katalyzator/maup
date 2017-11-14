@@ -13,8 +13,7 @@ class IndexView(TemplateView):
         context['news'] = News.objects.all().order_by('updated')
         context['slider'] = Slider.objects.all().order_by('updated')
         context['universities'] = University.objects.filter(active=True)
-        context['congre'] = Conference.objects.filter(active=True, mode='kongre')[:2]
-        context['konferans'] = Conference.objects.filter(active=True, mode='conference')[:2]
+        context['konferans'] = Conference.objects.filter(active=True)[:4]
         context['gallery'] = Gallery.objects.all()
         context['index'] = 'index'
         context['regulation'] = Regulation.objects.last()

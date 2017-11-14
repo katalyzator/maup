@@ -120,7 +120,10 @@
     <section class="events_container">
         <div class="uk-container">
             <div class="events_block">
-                <h4>{% trans 'confer' %}</h4>
+                <div class="title">
+                    <h4>{% trans 'confer' %}</h4>
+                </div>
+
                 <div class="events">
                     {% for konferens in konferans %}
                         <div class="event">
@@ -137,27 +140,6 @@
                             </div>
                         </div>
                     {% endfor %}
-                </div>
-            </div>
-            <div class="events_block">
-                <h4>{% trans 'kongre' %}</h4>
-                <div class="events">
-                    {% for konferens in congre %}
-                        <div class="event">
-                            <div class="date">
-                                <span>{{ konferens.date_start|date:'d' }}</span>
-                                <p>{{ konferens.date_start|date:'F' }}</p>
-                            </div>
-
-                            <div class="e_desc">
-                                <h5>{{ konferens.title }}</h5>
-                                <p>{{ konferens.description }}</p>
-
-                                <a href="{% url 'single_event' konferens.id %}">{% trans 'more' %} </a>
-                            </div>
-                        </div>
-                    {% endfor %}
-
                 </div>
             </div>
         </div>

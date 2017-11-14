@@ -10,7 +10,6 @@
             <ul class="uk-subnav uk-subnav-pill"
                 uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
                 <li><a href="#">{% trans 'confer' %}</a></li>
-                <li><a href="#">{% trans 'kongre' %}</a></li>
             </ul>
 
             <ul class="uk-switcher">
@@ -18,52 +17,25 @@
                 <li>
                     <div class="events">
                         {% for item in conference_list %}
-                            {% if item.mode == 'conference' %}
-                                <div class="event">
-                                    <div class="date">
-                                        <span>{{ item.date_start|date:'d' }}</span>
-                                        <p>{{ item.date_start|date:'F' }}</p>
-                                    </div>
-
-                                    <div class="e_desc">
-                                        <h5>{{ item.title }}</h5>
-                                        <p>{{ item.description }}</p>
-
-                                        <a href="{% url 'single_event' item.id %}">{% trans 'more' %}</a>
-                                    </div>
+                            <div class="event">
+                                <div class="date">
+                                    <span>{{ item.date_start|date:'d' }}</span>
+                                    <p>{{ item.date_start|date:'F' }}</p>
                                 </div>
-                            {% endif %}
+
+                                <div class="e_desc">
+                                    <h5>{{ item.title }}</h5>
+                                    <p>{{ item.description }}</p>
+
+                                    <a href="{% url 'single_event' item.id %}">{% trans 'more' %}</a>
+                                </div>
+                            </div>
                         {% endfor %}
                     </div>
 
                 </li>
-                <li>
-                    <div class="events">
-                        {% for item in conference_list %}
-                            {% if item.mode == 'kongre' %}
-                                <div class="event">
-                                    <div class="date">
-                                        <span>{{ item.date_start|date:'d' }}</span>
-                                        <p>{{ item.date_start|date:'F' }}</p>
-                                    </div>
 
-                                    <div class="e_desc">
-                                        <h5>{{ item.title }}</h5>
-                                        <p>{{ item.description }}</p>
-
-                                        <a href="{% url 'single_event' item.id %}">Fazlasını göster</a>
-                                    </div>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-
-                    </div>
-                </li>
             </ul>
-
-{#            <div>#}
-{#                <a class="uk-button uk-button-default show_more" href="#">Fazlasını göster</a>#}
-{#            </div>#}
 
         </div>
     </main>
