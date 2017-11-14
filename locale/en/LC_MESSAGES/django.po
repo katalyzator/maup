@@ -100,7 +100,7 @@ msgstr "The Procedure"
 
 #: templates/index.html:71
 msgid "found_board"
-msgstr "Foundation Board"
+msgstr "Regulation"
 
 #: templates/index.html:78
 msgid "foundation_text"

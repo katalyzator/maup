@@ -147,7 +147,20 @@ class MainUniversity(models.Model):
 
     title = models.CharField(max_length=255, verbose_name='Название Страны')
     image = models.ImageField(upload_to='images/countries', verbose_name='Карта страны')
-    university = models.ManyToManyField(University, max_length=20, verbose_name='Выберите университеты', related_name='country_university')
+    university = models.ManyToManyField(University, max_length=20, verbose_name='Выберите университеты',
+                                        related_name='country_university')
+
+    def __unicode__(self):
+        return smart_unicode(self.title)
+
+
+class Regulation(models.Model):
+    class Meta:
+        verbose_name_plural = 'Regulation'
+        verbose_name = 'object'
+
+    title = models.CharField(max_length=255, verbose_name='Title')
+    reg_file = models.FileField(upload_to='files/regulation', verbose_name='File')
 
     def __unicode__(self):
         return smart_unicode(self.title)

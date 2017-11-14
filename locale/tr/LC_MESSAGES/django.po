@@ -100,7 +100,7 @@ msgstr "Birliğin Yönetim Şekli"
 
 #: templates/index.html:71
 msgid "found_board"
-msgstr "Kurucu Yürütme"
+msgstr "Yönerge"
 
 #: templates/index.html:78
 msgid "foundation_text"

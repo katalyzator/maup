@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 
 from django.views.generic import TemplateView, ListView, DetailView
 
-from main.models import News, Slider, University, Conference, Gallery, MainUniversity
+from main.models import News, Slider, University, Conference, Gallery, MainUniversity, Regulation
 
 
 class IndexView(TemplateView):
@@ -17,6 +17,7 @@ class IndexView(TemplateView):
         context['konferans'] = Conference.objects.filter(active=True, mode='conference')[:2]
         context['gallery'] = Gallery.objects.all()
         context['index'] = 'index'
+        context['regulation'] = Regulation.objects.last()
 
         return context
 
